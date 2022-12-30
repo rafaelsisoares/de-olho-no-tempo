@@ -1,0 +1,1 @@
+export const roundValues = (value) => Math.round(value);
