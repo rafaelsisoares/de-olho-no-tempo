@@ -1,11 +1,9 @@
 import React from 'react'
 
+import useCity from '../hooks/useCity'
+
 export default function Main() {
-
-  const handleChange = ({ target }) => {
-    console.log(target.value);
-  };
-
+  const { handleChange } = useCity();
   return (
     <div>
       <input
