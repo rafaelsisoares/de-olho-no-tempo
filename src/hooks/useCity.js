@@ -3,7 +3,7 @@ import { useState } from "react";
 import requestAPI from "../utils/api";
 
 export default function useCity() {
-  const [weather, setWeather] = useState({});
+  const [currentWeather, setCurrentWeather] = useState({});
   const [city, setCity] = useState('');
 
   const handleChange = ({ target: { value } }) => {
@@ -14,12 +14,12 @@ export default function useCity() {
 
   const handleClick = async () => {
     const weatherData = await requestAPI(city);
-    setWeather(weatherData);
+    setCurrentWeather(weatherData);
   }
 
   return {
     handleChange,
     handleClick,
-    weather,
+    currentWeather,
   };
 }
