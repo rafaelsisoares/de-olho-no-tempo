@@ -6,7 +6,7 @@ import { convertToKm } from '../utils/converter';
 
 export default function Main() {
   const { handleChange, handleClick, currentWeather } = useCity();
-  const { weather, main, name, wind } = currentWeather;
+  const { weather, main, name, wind, cod } = currentWeather;
   return (
     <div>
       <input
@@ -16,7 +16,7 @@ export default function Main() {
       />
       <button type='button' onClick={ handleClick }>Pesquisar</button>
       {
-        Object.keys(currentWeather).length > 0 && (
+        Object.keys(currentWeather).length > 0 && cod === 200 && (
           <div>
             <div>
               <h1>{name}</h1>
