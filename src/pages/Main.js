@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Input from '../components/input';
 import useCity from '../hooks/useCity'
 import { roundValues } from '../utils/roundValues';
 import { convertToKm } from '../utils/converter';
@@ -9,12 +10,7 @@ export default function Main() {
   const { weather, main, name, wind, cod } = currentWeather;
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Digite o nome de uma cidade" 
-        onChange={ handleChange }
-      />
-      <button type='button' onClick={ handleClick }>Pesquisar</button>
+      <Input handleChange={ handleChange } handleClick={ handleClick }/>
       {
         Object.keys(currentWeather).length > 0 && cod === 200 && (
           <div>
