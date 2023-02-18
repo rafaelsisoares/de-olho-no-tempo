@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Input({ handleChange, handleClick }) {
   return (
-    <div>
+    <div className="w-fit">
         <input
         type="text"
         placeholder="Digite o nome de uma cidade" 

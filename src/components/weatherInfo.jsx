@@ -7,14 +7,15 @@ export default function WeatherInfo({ currentWeather }) {
   const { weather, main, name, wind } = currentWeather;
 
   return (
-    <div>
-      <div>
-        <h1>{name}</h1>
+    <div className="">
+      <div className="w-2/3 mx-auto">
+        <h1 className="font-bold text-center text-xl pt-2.5">{name}</h1>
         <img
           src={`http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`}
           alt="Icone da previsão do tempo"
+          className="mx-auto"
         />
-        <h1>{`${roundValues(main.temp)} °C`}</h1>
+        <h1 className="text-center text-lg pb-2.5 font-medium">{`${roundValues(main.temp)} °C`}</h1>
       </div>
       <div>
         <p>{`Sensação térmica: ${roundValues(main.feels_like)} °C`}</p>
