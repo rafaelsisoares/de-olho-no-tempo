@@ -9,9 +9,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../images/pexels-simon-berger-1266810.jpg');
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media  screen and (max-width: 600px){
+  body {
+    background-size: 100rem;
+  }
 }

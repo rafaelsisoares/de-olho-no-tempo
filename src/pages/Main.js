@@ -8,7 +8,7 @@ export default function Main() {
   const { handleChange, handleClick, currentWeather } = useCity();
   
   return (
-    <div className='bg-slate-300 w-3/5 p-2.5 mx-auto border'>
+    <div className='bg-slate-300 w-4/12 p-2.5 mx-auto  mt-28 border rounded-xl opacity-75 max-[600px]:w-8/12'>
       <Input handleChange={ handleChange } handleClick={ handleClick }/>
       {
         currentWeather.cod === 200 && (
