@@ -19,6 +19,8 @@ export default function WeatherInfo({ currentWeather, loading }) {
           className="mx-auto"
         />
         <h1 className="text-center text-lg pb-2.5 font-medium">{`${roundValues(main.temp)} °C`}</h1>
+        <h2 className="text-center text-lg pb-2.5 font-medium">{`${weather[0].description}`}</h2>
+        <br />
       </div>
       <div>
         <p>{`Sensação térmica: ${roundValues(main.feels_like)} °C`}</p>
