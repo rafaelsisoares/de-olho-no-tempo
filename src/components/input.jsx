@@ -15,7 +15,7 @@ export default function Input({ handleChange, handleClick }) {
           <button
           type='button'
           onClick={ handleClick }
-          className="border rounded-md border-black p-1 hover:bg-sky-100 active:bg-sky-300 max-[600px]:p-3"
+          className="border rounded-md border-black mb-2.5 p-1 hover:bg-sky-100 active:bg-sky-300 max-[600px]:p-3"
           >
             Pesquisar
           </button>

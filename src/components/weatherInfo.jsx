@@ -1,11 +1,14 @@
 import React from "react";
 
+import Loading from './loading';
+
 import { roundValues } from '../utils/roundValues';
 import { convertToKm } from '../utils/converter';
 
-export default function WeatherInfo({ currentWeather }) {
+export default function WeatherInfo({ currentWeather, loading }) {
   const { weather, main, name, wind } = currentWeather;
 
+  if (loading) return <Loading />
   return (
     <div className="">
       <div className="w-2/3 mx-auto">

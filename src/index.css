@@ -18,8 +18,23 @@ code {
     monospace;
 }
 
+.loading {
+  animation: spin 1s infinite linear;
+  border-left: 8px solid rgba(0, 0, 0, 1);
+  border-right: 8px solid rgba(0, 0, 0, 0);
+  border-top: 8px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  margin: auto;
+  height: 64px;
+  width: 64px;
+}
+
 @media  screen and (max-width: 600px){
   body {
     background-size: 100rem;
   }
+}
+
+@keyframes spin{
+  to{transform: rotate(360deg);}
 }
