@@ -14,3 +14,6 @@ Praticar minhas habilidades em desenvolvimento front-end e consumo de API's exte
 * ContextAPI
 * React Hooks
 * Tailwind CSS
+
+## Deploy
+[Deploy do Projeto](https://deolhonotempo.bohr.io)
